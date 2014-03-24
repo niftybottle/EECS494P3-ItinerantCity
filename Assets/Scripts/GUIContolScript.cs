@@ -23,7 +23,9 @@ public class GUIContolScript : MonoBehaviour {
 	public float leftcontrol;
 	public float controlheight;
 	public float controlwidth;
+	public Vector3 vec;
 	public string dialogueText = "Please choose where you want your soldier to spawn:";
+	public GameObject soldier;
 	// Use this for initialization
 	void Start () {
 		centerx = Screen.width/2f;
@@ -44,6 +46,7 @@ public class GUIContolScript : MonoBehaviour {
 			//Call the recieving fn and pass it a string of N,S,E, or W
 			//source.fn(buttonSelected);
 			//Reset this script
+			Instantiate(soldier,vec,Quaternion.identity);
 			go = false;
 			pushed = false;
 		}
@@ -65,6 +68,7 @@ public class GUIContolScript : MonoBehaviour {
 			GUILayout.FlexibleSpace();
 			if(GUILayout.Button("N")){
 				buttonSelected = "N";
+				vec = new Vector3(8f,-3.75f);
 				pushed = true;
 			}
 			GUILayout.FlexibleSpace();
@@ -75,11 +79,13 @@ public class GUIContolScript : MonoBehaviour {
 			GUILayout.BeginHorizontal();
 			if(GUILayout.Button("W")){
 				buttonSelected = "W";
+				vec = new Vector3(6.5f,-5f);
 				pushed = true;
 			}
 			GUILayout.FlexibleSpace();
 			if(GUILayout.Button("E")){
 				buttonSelected = "E";
+				vec = new Vector3(10f,-5f);
 				pushed = true;
 			}
 			GUILayout.EndHorizontal();
@@ -90,6 +96,7 @@ public class GUIContolScript : MonoBehaviour {
 			GUILayout.FlexibleSpace();
 			if(GUILayout.Button("S")){
 				buttonSelected = "S";
+				vec = new Vector3(8f,-6f);
 				pushed = true;
 			}
 			GUILayout.FlexibleSpace();

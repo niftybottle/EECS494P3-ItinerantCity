@@ -1,8 +1,9 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\GUIContolScript.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/GUIContolScript.cs">
     <Files>
-      <File FileName="Assets\Scripts\GUIContolScript.cs" Line="92" Column="1" />
+      <File FileName="Assets/Scripts/TiledXMLReader.cs" Line="225" Column="1" />
+      <File FileName="Assets/Scripts/GUIContolScript.cs" Line="88" Column="32" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
