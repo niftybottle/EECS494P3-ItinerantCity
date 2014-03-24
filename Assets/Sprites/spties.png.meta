@@ -45,15 +45,6 @@ TextureImporter:
     compressionQuality: 50
   spriteSheet:
     sprites:
-    - name: spties_0
-      rect:
-        serializedVersion: 2
-        x: 27
-        y: 288
-        width: 37
-        height: 43
-      alignment: 0
-      pivot: {x: .5, y: .5}
     - name: spties_1
       rect:
         serializedVersion: 2
