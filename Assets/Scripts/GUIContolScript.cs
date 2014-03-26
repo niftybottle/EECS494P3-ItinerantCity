@@ -4,6 +4,7 @@ using System.Collections;
 public class GUIContolScript : MonoBehaviour {
 	//Whether the dialogue should display
 	public bool go;
+	public bool castleClicked;
 	public GameObject source;
 	public string buttonSelected;
 	public bool pushed;
@@ -38,6 +39,7 @@ public class GUIContolScript : MonoBehaviour {
 		controlwidth = width - 2*margin;
 		go = false;
 		pushed = false;
+		castleClicked = false;
 	}
 	
 	// Update is called once per frame
